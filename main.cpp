@@ -1,5 +1,5 @@
 #include <iostream>
-
+#include <cstdint>
 using namespace std;
 
 
@@ -92,33 +92,29 @@ int64_t modulo(int64_t opA, int64_t opB){
 	return opA % opB;
 }
 
-float modulo(float opA, float opB){
-	return opA % opB;
-}
 
-double modulo(double opA, double opB){
-	return opA % opB;
-}
 
-int main() {
+int main(){
 
 
 char rep;
+
 cout << "Veuillez saisir l'opérateur désiré : \na - Addition\nb - Soustraction\nc - Multiplication\nd - Division\ne - Modulo" << endl;
 cin >> rep;
 
 switch(rep){
-case 'a' :  
+case 'a' :;
 break;
-case 'b' :
+case 'b' :;
 break;
-case 'c' :
+case 'c' :;
 break;
-case 'd' :
+case 'd' :;
 break;
-case 'e' :
+case 'e' :;
 break;
-default : "Vous n'avez pas saisi le bon caractère !!!"
+default : "Vous n'avez pas saisi le bon caractère !!!";
+break;
 }
 
 

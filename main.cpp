@@ -2,8 +2,6 @@
 
 using namespace std;
 
-int main() {
-
 
 //Fonctions additions
 int32_t addition(int32_t opA,int32_t opB){
@@ -101,6 +99,29 @@ float modulo(float opA, float opB){
 double modulo(double opA, double opB){
 	return opA % opB;
 }
+
+int main() {
+
+
+char rep;
+cout << "Veuillez saisir l'opérateur désiré : \na - Addition\nb - Soustraction\nc - Multiplication\nd - Division\ne - Modulo" << endl;
+cin >> rep;
+
+switch(rep){
+case 'a' :  
+break;
+case 'b' :
+break;
+case 'c' :
+break;
+case 'd' :
+break;
+case 'e' :
+break;
+default : "Vous n'avez pas saisi le bon caractère !!!"
+}
+
+
 
 
 return 0;

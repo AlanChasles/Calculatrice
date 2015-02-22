@@ -97,25 +97,112 @@ int64_t modulo(int64_t opA, int64_t opB){
 int main(){
 
 
-char rep;
+char rep1,rep2;
+cout << "Veuillez saisir le type de nombre désiré : \na - int\nb - float\nc - double" << endl;
+cin >> rep1;
 
-cout << "Veuillez saisir l'opérateur désiré : \na - Addition\nb - Soustraction\nc - Multiplication\nd - Division\ne - Modulo" << endl;
-cin >> rep;
+switch(rep1) {
+case 'a' : 
+	cout << "Veuillez saisir l'opérateur désiré : \na - Addition\nb - Soustraction\nc - Multiplication\nd - Division\ne - Modulo" << endl;
+	cin >> rep2;
+	int a,b;
+	cout << "\n\nVeuillez saisir le premier nombre : ";
+	cin >> a;
+	cout << "\n\nVeuillez saisir le second nombre : ";
+	cin >> b;
 
-switch(rep){
-case 'a' :;
-break;
-case 'b' :;
-break;
-case 'c' :;
-break;
-case 'd' :;
-break;
-case 'e' :;
-break;
-default : "Vous n'avez pas saisi le bon caractère !!!";
+	if (rep2 == 'a'){	
+	cout << " \n\nRésultat : " << addition(a,b);
+	
+	}
+
+	if (rep2 == 'b'){	
+	cout << " \n\nRésultat : " << soustraction(a,b);
+	
+	}
+
+	if (rep2 == 'c'){	
+	cout << " \n\nRésultat : " << multiplication(a,b);
+	
+	}
+
+	if (rep2 == 'd'){	
+	cout << " \n\nRésultat : " << division(a,b);
+	
+	}
+
+	if (rep2 == 'e'){	
+	cout << " \n\nRésultat : " << modulo(a,b);
+	
+	}
+
+	else cout << "Veuillez saisir un caractère du menu !!!" << endl;
+	break;
+case 'b' :
+	cout << "Veuillez saisir l'opérateur désiré : \na - Addition\nb - Soustraction\nc - Multiplication\nd - Division\ne - Modulo" << endl;
+	cin >> rep2;
+	float c,d;
+	cout << "\n\nVeuillez saisir le premier nombre : ";
+	cin >> c;
+	cout << "\n\nVeuillez saisir le second nombre : ";
+	cin >> d;
+
+	if (rep2 == 'a'){	
+	cout << " \n\nRésultat : " << addition(c,d);;
+	
+	}
+
+	if (rep2 == 'b'){	
+	cout << " \n\nRésultat : " << soustraction(c,d);;
+	
+	}
+
+	if (rep2 == 'c'){	
+	cout << " \n\nRésultat : " << multiplication(c,d);
+	
+	}
+
+	if (rep2 == 'd'){	
+	cout << " \n\nRésultat : " << division(c,d);
+	
+	}
+
+	else cout << "Veuillez saisir un caractère du menu !!!" << endl;
+	break;
+case 'c' :
+	cout << "Veuillez saisir l'opérateur désiré : \na - Addition\nb - Soustraction\nc - Multiplication\nd - Division\ne - Modulo" << endl;
+	cin >> rep2;
+	double e,f;
+	cout << "\n\nVeuillez saisir le premier nombre : ";
+	cin >> e;
+	cout << "\n\nVeuillez saisir le second nombre : ";
+	cin >> f;
+
+	if (rep2 == 'a'){	
+	cout << " \n\nRésultat : " << addition(e,f);
+	
+	}
+
+	if (rep2 == 'b'){	
+	cout << " \n\nRésultat : " << soustraction(e,f);
+	
+	}
+
+	if (rep2 == 'c'){	
+	cout << " \n\nRésultat : " << multiplication(e,f);
+	
+	}
+
+	if (rep2 == 'd'){	
+	cout << " \n\nRésultat : "<< division(c,d);
+	}
+
+	else cout << "Veuillez saisir un des caractère du menu !!!" << endl;
+	break;
+default : "Veuillez saisir un des caractères du menu !";
 break;
 }
+
 
 
 

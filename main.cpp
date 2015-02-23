@@ -1,4 +1,4 @@
-/// \brief Bibliothèques utilisées
+/// Bibliothèques utilisées
 
 #include <iostream>
 #include <cstdint>
@@ -287,11 +287,12 @@ int64_t modulo(int64_t opA, int64_t opB){
 //---------------------------------------
 
 //Procédure Traitement
-/// \brief Procédure Traitement
+/// \brief Procédure TraitementEntier
 ///
-///La procédure Traitement() affiche un menu proposant le type de calcul.
-///Ensuite elle affiche le résultat du calcul.
-void Traitement(){
+///La procédure TraitementEntier() affiche un menu proposant le type de calcul.
+///Ensuite sont saisis deux entiers.
+///Enfin elle affiche le résultat du calcul.
+void TraitementEntier(){
 
 cout << "Veuillez saisir l'opérateur désiré : \na - Addition\nb - Soustraction\nc - Multiplication\nd - Division\ne - Modulo" << endl;
 	
@@ -336,6 +337,100 @@ else cout << "Veuillez saisir un caractère du menu !!!" << endl;
 	
 }
 
+/// \brief Procédure TraitementDouble
+///
+///La procédure TraitementDouble() affiche un menu proposant le type de calcul.
+///Ensuite sont saisis deux doubles.
+///Enfin elle affiche le résultat du calcul.
+void TraitementDouble(){
+
+cout << "Veuillez saisir l'opérateur désiré : \na - Addition\nb - Soustraction\nc - Multiplication\nd - Division\n" << endl;
+	
+cin >> rep2;
+double a,b;
+cout << "\n\nVeuillez saisir le premier nombre : ";
+cin >> a;
+cout << "\n\nVeuillez saisir le second nombre : ";
+cin >> b;
+	
+if (rep2 == 'a'){	
+	
+	cout << " \n\nRésultat : " << addition(a,b);
+	
+}
+
+if (rep2 == 'b'){	
+	
+	cout << " \n\nRésultat : " << soustraction(a,b);
+	
+}
+
+if (rep2 == 'c'){	
+	
+	cout << " \n\nRésultat : " << multiplication(a,b);
+	
+}
+
+if (rep2 == 'd'){
+	
+	cout << " \n\nRésultat : " << division(a,b);
+	
+}
+
+
+else cout << "Veuillez saisir un caractère du menu !!!" << endl;
+	
+}
+
+/// \brief Procédure TraitementFloat
+///
+///La procédure TraitementFloat() affiche un menu proposant le type de calcul.
+///Ensuite sont saisis deux float.
+///Enfin elle affiche le résultat du calcul.
+void TraitementFloat(){
+
+cout << "Veuillez saisir l'opérateur désiré : \na - Addition\nb - Soustraction\nc - Multiplication\nd - Division\n" << endl;
+	
+cin >> rep2;
+float a,b;
+cout << "\n\nVeuillez saisir le premier nombre : ";
+cin >> a;
+cout << "\n\nVeuillez saisir le second nombre : ";
+cin >> b;
+	
+if (rep2 == 'a'){	
+	
+	cout << " \n\nRésultat : " << addition(a,b);
+	
+}
+
+if (rep2 == 'b'){	
+	
+	cout << " \n\nRésultat : " << soustraction(a,b);
+	
+}
+
+if (rep2 == 'c'){	
+	
+	cout << " \n\nRésultat : " << multiplication(a,b);
+	
+}
+
+if (rep2 == 'd'){
+	
+	cout << " \n\nRésultat : " << division(a,b);
+	
+}
+
+if (rep2 == 'e'){	
+	
+	cout << " \n\nRésultat : " << modulo(a,b);
+	
+}
+
+else cout << "Veuillez saisir un caractère du menu !!!" << endl;
+	
+}
 /// \brief Cette fonction est une calculatrice permettant à l'utilisateur de choisir le type des nombres et de calcul.
 
 int main(){
@@ -350,13 +445,13 @@ cin >> rep1;
 switch(rep1) {
 
 case 'a' : 
-	Traitement();
+	TraitementEntier();
 break;
 case 'b' :
-	Traitement();
+	TraitementFloat();
 break;
 case 'c' :
-	Traitement();
+	TraitementDouble();
 break;
 default : "Veuillez saisir un des caractères du menu !";
 break;
